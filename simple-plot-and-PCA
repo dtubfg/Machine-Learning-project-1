@@ -19,10 +19,6 @@ df = pd.DataFrame(raw_data, columns = cols)
 index = np.random.randint(1,len(df),5000)
 X = df.iloc[index,:]
 
-# what is this? ->
-# real training set: df[0:250000]
-# df_testing = df[250000:]
-
 # compute (reduced) dataframe dimensions (X = N x M)
 N = len(df['goal'])
 M = len(cols)
